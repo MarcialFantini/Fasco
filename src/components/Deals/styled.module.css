@@ -1,0 +1,85 @@
+.containerAll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.containerList {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  padding: 20px 40px 10px 10px;
+}
+
+.containerText h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.containerText button {
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.containerText h3 {
+  font-size: 1.4rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+
+  max-height: 500px;
+
+  transition: all 0.5s;
+  position: relative;
+}
+.itemRow {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  transition: all 0.5s;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+
+.btn {
+  position: absolute;
+
+  width: 40%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  bottom: 10%;
+}
+
+.btn button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+
+  font-size: 1rem;
+}

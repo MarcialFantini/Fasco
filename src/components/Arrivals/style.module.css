@@ -1,0 +1,48 @@
+.arrivals {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.textContainer p {
+  width: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+
+  font-size: 1.2rem;
+  border-radius: 8px;
+
+  transition: all 0.2s;
+
+  cursor: pointer;
+  box-shadow: 1px 1px 10px transparent;
+}
+
+.buttons button:hover {
+  background: black;
+  color: white;
+  box-shadow: 1px 1px 10px black;
+}
+
+.containerProducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 50px auto;
+}
