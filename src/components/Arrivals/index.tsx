@@ -2,22 +2,21 @@
 import { ProductsArticle } from "@/interfaces/products";
 import style from "./style.module.css";
 
-import srcDefault from "../../../public/header/top.jpg";
 import { CardClothes } from "../CardClothes";
 
-import src1 from "../../../public/category/1.jpg";
-import src2 from "../../../public/category/2.jpg";
-import src3 from "../../../public/category/3.jpg";
-import src4 from "../../../public/category/4.jpg";
-import src5 from "../../../public/category/5.jpg";
-import src6 from "../../../public/category/6.jpg";
+import src1 from "../../../public/category/1.webp";
+import src2 from "../../../public/category/2.webp";
+import src3 from "../../../public/category/3.webp";
+import src4 from "../../../public/category/4.webp";
+import src5 from "../../../public/category/5.webp";
+import src6 from "../../../public/category/6.webp";
 
-import src7 from "../../../public/category/7.jpg";
-import src8 from "../../../public/category/8.jpg";
-import src9 from "../../../public/category/9.jpg";
-import src10 from "../../../public/category/10.jpg";
-import src11 from "../../../public/category/11.jpg";
-import src12 from "../../../public/category/12.jpg";
+import src7 from "../../../public/category/7.webp";
+import src8 from "../../../public/category/8.webp";
+import src9 from "../../../public/category/9.webp";
+import src10 from "../../../public/category/10.webp";
+import src11 from "../../../public/category/11.webp";
+import src12 from "../../../public/category/12.webp";
 import { useState } from "react";
 
 const data1: ProductsArticle[] = [
