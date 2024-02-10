@@ -1,3 +1,5 @@
+"use client";
+import { scrollToElement } from "@/utils/scrollToElement";
 import styled from "./styled.module.css";
 
 export const Navbar = () => {
@@ -6,12 +8,9 @@ export const Navbar = () => {
       <h1 className={styled.title}>FASCO</h1>
 
       <ul className={styled.navbar}>
-        <li>Home</li>
-        <li>Deals</li>
-        <li>New Arrivals</li>
-        <li>Packages</li>
-        <li>Sign in</li>
-        <li className={styled.btn}>Sign Up</li>
+        <li onClick={() => scrollToElement("home")}>Home</li>
+        <li onClick={() => scrollToElement("deals")}>Deals</li>
+        <li onClick={() => scrollToElement("arrivals")}>New Arrivals</li>
       </ul>
     </nav>
   );

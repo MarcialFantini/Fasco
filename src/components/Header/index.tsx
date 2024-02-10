@@ -9,7 +9,7 @@ import srcBottom from "../../../public/header/bottom.jpg";
 export const Header = () => {
   return (
     <header className={styled.header}>
-      <picture className={styled.column + " " + styled.picture}>
+      <picture id="home" className={styled.column + " " + styled.picture}>
         <Image className={styled.img} src={srcColumn1} alt=""></Image>
       </picture>
       <div className={styled.column}>

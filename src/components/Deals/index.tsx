@@ -1,17 +1,21 @@
 "use client";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import style from "./styled.module.css";
-import srcImage from "../../../public/header/columna1.jpg";
+import srcImage1 from "../../../public/list/1.png";
+import srcImage2 from "../../../public/list/2.png";
+import srcImage3 from "../../../public/list/3.png";
+import srcImage4 from "../../../public/list/4.png";
+
 import Image from "next/image";
 import { title } from "process";
 
 const listImage = [
-  { srcImage: srcImage, alt: "title" },
-  { srcImage: srcImage, alt: "title" },
+  { srcImage: srcImage1, alt: "title" },
+  { srcImage: srcImage2, alt: "title" },
 
-  { srcImage: srcImage, alt: "title" },
+  { srcImage: srcImage3, alt: "title" },
 
-  { srcImage: srcImage, alt: "title" },
+  { srcImage: srcImage4, alt: "title" },
 ];
 
 export const Deals = () => {
@@ -19,6 +23,7 @@ export const Deals = () => {
 
   const plus = () => {
     if (indexSelect >= listImage.length - 1) {
+      setIndexSelect(0);
       return;
     }
     setIndexSelect(indexSelect + 1);
@@ -26,12 +31,13 @@ export const Deals = () => {
 
   const less = () => {
     if (indexSelect <= 0) {
+      setIndexSelect(listImage.length - 1);
       return;
     }
     setIndexSelect(indexSelect - 1);
   };
   return (
-    <section className={style.containerAll}>
+    <section id="deals" className={style.containerAll}>
       <div className={style.containerText}>
         <h2>Deals Of The Month</h2>
         <p>
@@ -52,11 +58,14 @@ export const Deals = () => {
                 className={style.itemRow}
                 key={index + title}
               >
-                <Image
-                  className={style.img}
-                  src={item.srcImage}
-                  alt={item.alt}
-                ></Image>
+                <Suspense>
+                  {" "}
+                  <Image
+                    className={style.img}
+                    src={item.srcImage}
+                    alt={item.alt}
+                  ></Image>
+                </Suspense>
               </picture>
             );
           })}

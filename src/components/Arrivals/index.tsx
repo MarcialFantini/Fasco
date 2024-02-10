@@ -117,7 +117,7 @@ export const Arrivals = () => {
   return (
     <section className={style.arrivals}>
       <div className={style.textContainer}>
-        <h2>New Arrivals</h2>
+        <h2 id="arrivals">New Arrivals</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
